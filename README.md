@@ -1,6 +1,5 @@
 # ExamenElectr-nica
-Mi proyecto final 
-El pensamiento se enreda, se tensiona, se relaja. El pensamiento continúa, en bucle. 
+
 
 ## Descripción del proyecto
 El pensamiento se enreda, se tensiona, se relaja. 

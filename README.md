@@ -22,85 +22,79 @@ int out2 = 3;
 int out3 = 4;
 int out4 = 5;
 
-// Variables para azar
-int velocidadGiro = 20; // velocidad de paso (ms)
+// Velocidad de giro (ms por paso)
+int velocidadGiro = 5;  // entre más bajo, más rápido gira el motor
+int velMax = 5;
+int velMin = 20;
 
-unsigned long tiempoInicioDireccion = 0; // marca cuando empezó la dirección actual
-unsigned long duracionDireccion = 0; // duración que mantendremos la dirección
 
-int direccion = 1;
+int randomDireccion = 0;
+
+int contador  = 0;
+int limiteContador = 500;
 
 void setup() {
+  // Configuramos los pines del motor como salidas
   pinMode(out1, OUTPUT);
   pinMode(out2, OUTPUT);
   pinMode(out3, OUTPUT);
   pinMode(out4, OUTPUT);
 
-  Serial.begin(9600);
+  randomSeed(analogRead(0));
 
-  // Inicializamos duración dirección y tiempo inicio
-  duracionDireccion = random(15000, 30000); // entre 15 y 30 segundos por dirección
-  tiempoInicioDireccion = millis();
+  Serial.begin(9600);
 }
 
 void loop() {
-  unsigned long tiempoActual = millis();
+  contador = contador + 1;
+  // Gira el motor en una dirección de forma continua
+  if (randomDireccion == 0) {
+    paso1();
+    delay(velocidadGiro);
 
-  // Cambiar dirección solo si ha pasado el tiempo mínimo para mantenerla
-  if (tiempoActual - tiempoInicioDireccion >= duracionDireccion) {
-    // Cambiar dirección aleatoriamente (menos probable que cambie)
-    if (random(0, 100) < 30) { // 30% de probabilidad de cambiar dirección
-      direccion = -direccion;
-      Serial.println("Cambio de direccion!");
-    }
-    // Reiniciamos contadores
-    duracionDireccion = random(15000, 30000); // nueva duración entre 15-30 seg
-    tiempoInicioDireccion = tiempoActual;
+    paso2();
+    delay(velocidadGiro);
+
+    paso3();
+    delay(velocidadGiro);
+
+    paso4();
+    delay(velocidadGiro);
   }
 
-  // Definimos velocidadGiro para cada loop (puede ser un poco variable)
-  velocidadGiro = random(10, 60);
+  if (randomDireccion == 1) {
+    paso4();
+    delay(velocidadGiro);
 
-  // Determinar cantidad de pasos a dar en este ciclo corto
-  int pasosPorCiclo = 10; // controlamos la cantidad de pasos por loop para hacer movimiento fluido
+    paso3();
+    delay(velocidadGiro);
 
-  for (int i = 0; i < pasosPorCiclo; i++) {
-    // Movimiento errático aleatorio con 10% de probabilidad:
-    if (random(0, 100) < 10) {
-      // Movimiento errático: pasos reversa rápidos
-      pasoErratico();
-      delay(velocidadGiro / 3);
-    } else {
-      // Movimiento normal según dirección
-      if (direccion == 1) {
-        paso1(); delay(velocidadGiro);
-        paso2(); delay(velocidadGiro);
-        paso3(); delay(velocidadGiro);
-        paso4(); delay(velocidadGiro);
-      } else {
-        paso4(); delay(velocidadGiro);
-        paso3(); delay(velocidadGiro);
-        paso2(); delay(velocidadGiro);
-        paso1(); delay(velocidadGiro);
-      }
-    }
+    paso2();
+    delay(velocidadGiro);
+
+    paso1();
+    delay(velocidadGiro);
   }
+
   
-  // Pausa pequeña antes del siguiente ciclo para evitar bloqueos y permitir cambios de dirección
-  delay(50);
-}
 
-// Función para movimiento errático: pasos cortos rápidos hacia atrás y adelante
-void pasoErratico() {
-  // Un pequeño movimiento rápido adelante y atrás para simular erraticidad
-  paso1(); delay(5);
-  paso2(); delay(5);
-  paso3(); delay(5);
-  paso4(); delay(5);
-  paso4(); delay(5);
-  paso3(); delay(5);
-  paso2(); delay(5);
-  paso1(); delay(5);
+  if (contador > limiteContador)
+  {
+    velocidadGiro = random (velMax, velMin);
+
+    contador = 0;
+
+    randomDireccion = random(0,2);
+
+  }
+
+ Serial.print(velocidadGiro);
+  Serial.print(" - ");
+  Serial.print(contador);
+  Serial.print(" - ");
+  Serial.print(randomDireccion);
+  Serial.println();
+
 }
 
 // FUNCIONES PARA CADA PASO

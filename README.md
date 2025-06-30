@@ -1,6 +1,6 @@
 # ExamenElectronica
 
-El pensamiento se enrreda, se tensiona, se relaja. 
+El pensamiento se enreda, se tensiona, se relaja. 
 
 El pensamiento continúa, en bucle. 
 
@@ -13,10 +13,10 @@ Dos motores en movimiento circular, están conectados por medio de una lana que,
 [![montaje](https://i.postimg.cc/ydRByyS2/1000057439.jpg)](https://postimg.cc/bDqKzbgR)
 
 ##
-La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte de cada mòdulo està compuesto por una lámina de madera, anclada a la muralla, el cual tiene un soporte de cortina hecho del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. Recomiendo que los elementos utilizados para construir dichos módulos, sean con materiales y objetos encontrados.
+La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte de cada módulo está compuesto por una lámina de madera, anclada a la muralla, el cual tiene un soporte de cortina hecho del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. Recomiendo que los elementos utilizados para construir dichos módulos, sean con materiales u objetos encontrados.
 
-
-[![1000057427.jpg](https://i.postimg.cc/kX1ZDt2S/1000057427.jpg)](https://postimg.cc/KRTQHjrc)
+[![montaje.jpg](https://i.postimg.cc/QdbxPmC7/montaje.jpg)](https://postimg.cc/RWWBJccC)
+[![modulo.jpg](https://i.postimg.cc/2SmS2Mkm/modulo.jpg)](https://postimg.cc/7fs4LBJQ) 
 
 ## Diagramas 
 [![Diagrama-Tinkercad.png](https://i.postimg.cc/1Rnt2gd1/Diagrama-Tinkercad.png)](https://postimg.cc/F1vNJKmT)

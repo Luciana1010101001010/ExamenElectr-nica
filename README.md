@@ -9,14 +9,16 @@ El pensamiento es un diálogo
 
 ## Descripción del proyecto
 
-Dos motores en movimiento circular están conectados por medio de una lana que debido a la rotación de los motores se tensiona o distensiona. 
+Dos motores en movimiento circular, están conectados por medio de una lana que, debido a la rotación de los motores, se tensiona o distensiona. 
+[![montaje](https://i.postimg.cc/ydRByyS2/1000057439.jpg)](https://postimg.cc/bDqKzbgR)
 
 ##
-La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte es una lámina de madera, anclada a la muralla, el cual tiene dos soportes de cortina del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. 
+La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte de cada mòdulo està compuesto por una lámina de madera, anclada a la muralla, el cual tiene un soporte de cortina hecho del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. Recomiendo que los elementos utilizados para construir dichos módulos, sean con materiales y objetos encontrados.
 
-[![Ensamblado.jpg](https://i.postimg.cc/tTVjS64r/Ensamblado.jpg)](https://postimg.cc/Vr1p5dMM)
 
-##
+[![1000057427.jpg](https://i.postimg.cc/kX1ZDt2S/1000057427.jpg)](https://postimg.cc/KRTQHjrc)
+
+## Diagramas 
 [![Diagrama-Tinkercad.png](https://i.postimg.cc/1Rnt2gd1/Diagrama-Tinkercad.png)](https://postimg.cc/F1vNJKmT)
 [![Diagrama.png](https://i.postimg.cc/QdkZvss3/Diagrama.png)](https://postimg.cc/K1zWg6Rq)
 

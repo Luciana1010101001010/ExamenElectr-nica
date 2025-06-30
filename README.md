@@ -1,6 +1,6 @@
-# ExamenElectr-nica
+# ExamenElectronica
 
-El pensamiento se enreda, se tensiona, se relaja. 
+El pensamiento se enrreda, se tensiona, se relaja. 
 
 El pensamiento continúa, en bucle. 
 
@@ -9,10 +9,10 @@ El pensamiento es un diálogo
 
 ## Descripción del proyecto
 
-Dos motores en movimiento circular están conectados por medio de una lana, la cual, debido a la rotación de los motores ésta se tensiona o distensiona. 
+Dos motores en movimiento circular están conectados por medio de una lana que debido a la rotación de los motores se tensiona o distensiona. 
 
 ##
-La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. Los motores están anclados a la muralla, cuyo soporte es una lámina de madera. Entre estos dos motores hay 60 cm de distancia donde la lana cuelga a merced del comportamiento de los motores. 
+La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte es una lámina de madera, anclada a la muralla, el cual tiene dos soportes de cortina del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. 
 
 ~~~ // MOTOR PASO A PASO
 

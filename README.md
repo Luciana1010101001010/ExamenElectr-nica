@@ -14,6 +14,15 @@ Dos motores en movimiento circular están conectados por medio de una lana que d
 ##
 La obra se compone de dos motores paso a paso, dos arduinos y una madeja de lana negra. El soporte es una lámina de madera, anclada a la muralla, el cual tiene dos soportes de cortina del mismo material, donde la lana se enrolla y cuelga a merced del comportamiento de los motores. 
 
+[![Ensamblado.jpg](https://i.postimg.cc/tTVjS64r/Ensamblado.jpg)](https://postimg.cc/Vr1p5dMM)
+
+##
+[![Diagrama-Tinkercad.png](https://i.postimg.cc/1Rnt2gd1/Diagrama-Tinkercad.png)](https://postimg.cc/F1vNJKmT)
+[![Diagrama.png](https://i.postimg.cc/QdkZvss3/Diagrama.png)](https://postimg.cc/K1zWg6Rq)
+
+
+
+
 ~~~ // MOTOR PASO A PASO
 
 // Pines del motor
@@ -28,7 +37,7 @@ int velMax = 5;
 int velMin = 20;
 
 
-int randomDireccion = 0;
+int randomDireccion = 0; //Para que varíe el movimiento 
 
 int contador  = 0;
 int limiteContador = 500;
